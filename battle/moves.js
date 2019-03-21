@@ -25,6 +25,31 @@ sound: Has no effect on Pokemon with the Ability Soundproof.
 */
 
 exports.BattleMovedex = {
+	// Sylvemons Start
+	"shieldslam": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "Damage is calculated using the user's Defense stat, including stat stage changes.",
+		shortDesc: "Uses user's Defense stat in damage calculation.",
+		id: "shieldslam",
+		isViable: true,
+		name: "Shield Slam",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onPrepareHit: function(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Heavy Slam", target);
+		},
+		//useTargetOffensive: true,
+		secondary: false,
+		target: "normal",
+		type: "Steel",
+		zMovePower: 160,
+		contestType: "Clever",
+	},
+	// Sylvemons End
 	"absorb": {
 		num: 71,
 		accuracy: 100,
