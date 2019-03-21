@@ -9737,7 +9737,7 @@ exports.BattlePokedex = {
     absol: {
         num: 359,
         species: "Absol",
-        types: ["Dark"],
+        types: ["Dark", "Fairy"],
         baseStats: {
             hp: 65,
             atk: 130,
@@ -10730,7 +10730,7 @@ exports.BattlePokedex = {
     torterra: {
         num: 389,
         species: "Torterra",
-        types: ["Grass", "Ground"],
+        types: ["Grass", "Rock"],
         genderRatio: {
             M: 0.875,
             F: 0.125
